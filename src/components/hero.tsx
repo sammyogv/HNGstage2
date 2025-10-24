@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 
 function Hero() {
   return (
@@ -15,19 +15,18 @@ function Hero() {
           Manage, track, and resolve tickets with ease. Built for speed, simplicity, and reliability.
         </p>
         <div className="space-x-4">
-          <a
-            href="/auth/signup"
+          <Link
+            to="/auth/signup"
             className="bg-white text-blue-600 font-semibold px-6 py-3 rounded-md shadow hover:bg-gray-100"
           >
             Get Started
-          </a>
-          <a
-            href="/auth/login"
+          </Link>
+          <Link
+            to="/auth/login"
             className="border text-blue-800 border-white px-6 py-3 rounded-md hover:bg-white hover:text-blue-700 font-semibold"
           >
             Login
-          </a>
-        </div>
+          </Link>    </div>
       </div>
 
       {/* Wavy SVG Background */}
